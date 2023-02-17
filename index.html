@@ -7,7 +7,18 @@
      <title>Rock, Paper, Scissors</title>
 </head>
 <body>
-     <script src="./html.js"></script>
+     <script src="./html.js">
+//The code below randomly generates Rock, Paper or Scissors:
+function getComputerChoice() {
+     let choice = ["Rock", "Paper", "Scissors"];
+     let randomRPS = choice[Math.floor(Math.random() * choice.length)];
+     return randomRPS;
+}
+
+
+
+
+     </script>
      
 </body>
 </html>
