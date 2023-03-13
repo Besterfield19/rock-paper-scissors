@@ -8,9 +8,10 @@
 </head>
 <body>
      <script src="./html.js">
+
 //The code below randomly generates Rock, Paper or Scissors:
 function getComputerChoice() {
-     let choice = ["Rock", "Paper", "Scissors"];
+     let choice = ["rock", "paper", "scissors"];
      let randomRPS = choice[Math.floor(Math.random() * choice.length)];
      return randomRPS;
 }
@@ -18,15 +19,15 @@ function getComputerChoice() {
 //The code below will play a single round of the game:
 function playRound(playerSelection, computerSelection) {
      if (playerSelection == "Rock" && computerSelection == "Paper") {
-          return "You lose! Rock beats paper.  The robot uprising will now commence."
+          return "You lose! Rock beats Paper.  The robot uprising will now commence."
      } else if (playerSelection == "Paper" && computerSelection == "Rock") {
-          return "You win! Paper beats rock! There may still be hope for humanity!";
+          return "You win! Paper beats Rock! There may still be hope for humanity!";
      } else if (playerSelection == "Rock" && computerSelection == "Scissors") {
-          return "You win!  Rock beats scissors!  Rest well knowing that humanity is safe.";
+          return "You win!  Rock beats Scissors!  Rest well knowing that humanity is safe.";
      } else if (playerSelection == "Scissors" && computerSelection == "Rock") {
-          return "You lose!  Rock beats scissors!  The robot uprising will now commence.";
+          return "You lose!  Rock beats Scissors!  The robot uprising will now commence.";
      } else if (playerSelection == "Paper" && computerSelection == "Scissors") {
-          return "You lose!  Scissors beats paper!  The robot uprising will now commence.";
+          return "You lose!  Scissors beats Paper!  The robot uprising will now commence.";
      } else if (playerSelection == "Scissors" && computerSelection == "Paper") {
           return "You win!  Scissors beats Paper!  Report to the office for your prize.";
      } else if (playerSelection === computerSelection) {
